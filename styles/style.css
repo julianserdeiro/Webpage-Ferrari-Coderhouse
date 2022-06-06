@@ -36,9 +36,14 @@ header{
     font-size: x-large;
 }
 
+.nav-link:hover{
+  color: #ffffff;
+}
+
 .navbar-toggler-icon{
     filter: invert();
 }
+
 
 
 #ferrari-logo{
@@ -166,13 +171,13 @@ header{
 
 .ferrari__description__text{
     background-color: rgb(128, 128, 128, 0.5);
-    margin-bottom: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 80px 50px;
+    text-align: center;
 }
 
-.ferrari__description__text p{
+.card-text p{
     width: 50%;
+    text-align: center;
 }
 
 #text1-description{
