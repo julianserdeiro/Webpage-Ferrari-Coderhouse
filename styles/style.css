@@ -226,7 +226,7 @@ header{
     flex-direction: column;
 }
 
-.card__car{
+.video__car{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -238,11 +238,12 @@ header{
     letter-spacing: 5px;
     text-align: center;
     font-size: 100px;
-    background-color: rgba(114, 0, 0, 0.5);
+    grid-area: titleCar;
 }
 
-.card__car img{
-    width: 75%;
+.card{
+    background: none ;
+    margin-bottom: 50px;
 }
 
 /* Fin Car */
