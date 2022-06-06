@@ -13,7 +13,6 @@ body{
 header{
     font-family: 'Bebas Neue', cursive;
     background-color: #181818;
-    height: 80px;
     display: flex;
     align-items: center;
     grid-area: header;
@@ -23,25 +22,23 @@ header{
 .navBar{
     width: 100%;
     display: flex;
-}
-
-.navBar__menu{
-    display: flex;
-    justify-content: space-around;
-    
-}
-
-.navBar__menu li{
-    font-size: x-large;
-    list-style: none;
-    padding-left: 40px;
-}
-
-.navBar__menu a{
-    text-decoration: none;
     color: #ffffff;
-    
-} 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.navbar-toggler-icon{
+    filter: invert();
+}
 
 
 #ferrari-logo{
