@@ -263,6 +263,13 @@ header{
     
 }
 
+.card{
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
 .section__drivers{
     display: grid;
     grid-template-columns: auto auto;
