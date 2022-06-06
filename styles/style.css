@@ -293,7 +293,6 @@ header{
     letter-spacing: 5px;
     text-align: center;
     font-size: 100px;
-    background-color: rgba(114, 0, 0, 0.5);
     margin-top: 100px;
 
 }
@@ -345,16 +344,13 @@ header{
     letter-spacing: 3px;
     text-align: center;
     font-size: 80px;
-    background-color: rgba(114, 0, 0, 0.5);
     margin-top: 100px;
 }
 
-#legends-image{
-    width: 500px;
-    height: 500px;
-    
+#card__legends{
+    width: 50vw;
+    margin-top: 30px;
 }
-
 
 
 /* Fin Legends */
@@ -377,7 +373,6 @@ header{
     letter-spacing: 3px;
     text-align: center;
     font-size: 80px;
-    background-color: rgba(114, 0, 0, 0.5);
     margin-top: 100px;
 }
 
@@ -413,7 +408,6 @@ header{
     letter-spacing: 5px;
     text-align: center;
     font-size: 100px;
-    background-color: rgba(114, 0, 0, 0.5);
     margin-top: 100px;
     grid-area: titleRaces;
 
