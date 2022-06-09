@@ -226,6 +226,7 @@ header{
     grid-area: sectionCar;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .video__car{
@@ -243,9 +244,10 @@ header{
     grid-area: titleCar;
 }
 
-.card{
+.card__car{
     background: none ;
     margin-bottom: 50px;
+    width: 800px;
 }
 
 .card-text p{
@@ -277,6 +279,7 @@ header{
     align-items: center;
     text-align: center;
     border: none;
+    background: none;
 }
 
 .section__drivers{
@@ -359,6 +362,7 @@ header{
     width: 50vw;
     margin-top: 30px;
 }
+
 
 
 /* Fin Legends */
@@ -529,6 +533,7 @@ header{
 /* Races responsive */
 
 @media(max-width: 768px){
+
     .races{
         display: flex;
         flex-flow: column nowrap;
@@ -542,6 +547,12 @@ header{
     #title-races{
         font-size: 2.5rem;
     }
+
+    .carousel-inner img{
+        width: 100%;
+    }
+
+    
 }
 
 /* Fin Races responsive */
@@ -567,6 +578,18 @@ header{
 
     #title-car{
         font-size: 2.5rem;
+    }
+
+    .video__car iframe{
+        display: none;
+    }
+
+    .card__car{
+        width: 100%;
+    }
+
+    .card__car img{
+        width: 100%;
     }
 }
 
