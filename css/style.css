@@ -1,0 +1,70 @@
+.header {
+  font-family: 'Bebas Neue', cursive;
+  background-color: #181818;
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  width: 100%; }
+  .header .navBar {
+    width: 100%;
+    display: flex;
+    color: #ffffff;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+  .header .nav-item {
+    margin-right: 30px; }
+  .header .nav-link {
+    color: #ffffff;
+    font-size: x-large; }
+    .header .nav-link:hover {
+      color: #ffffff; }
+  .header .navbar-toggler-icon {
+    filter: invert(100%); }
+  .header #ferrari-logo {
+    width: 20px;
+    filter: invert(100%); }
+
+.footer {
+  text-decoration: none;
+  grid-area: footer; }
+  .footer .footer__rrss {
+    display: flex;
+    justify-content: center;
+    list-style: none; }
+    .footer .footer__rrss img {
+      width: 50%; }
+
+.focus-in-expand-fwd {
+  -webkit-animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  max-width: 100vw; }
+
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
