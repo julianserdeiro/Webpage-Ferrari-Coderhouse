@@ -6,6 +6,11 @@
     "section1"
     "section2"
     "footer";
+    .footer{
+        background: url(../images/background-index2.jpg) no-repeat center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 }
 .ferrari__main{
     background: url(../images/background-index.jpg) no-repeat center;
@@ -61,8 +66,33 @@
         } 
     }
 
-    .footer__index{
-        background: url(../images/background-index2.jpg) no-repeat center;
-        background-attachment: fixed;
-        background-size: cover;
+    @media (max-width: 1020px){
+        .ferrari__description{
+            display: flex;
+            flex-flow: column nowrap;
+            width: 100%;
+            height: auto;
+        }
+    
+    }
+    @media (max-width: 635px){
+        .body__index{
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "header"
+            "section1"
+            "section2"
+            "footer";
+        }
+    
+        .ferrari__description{
+            width: 100%;
+        }
+    }
+    
+    @media (max-width: 350px){
+        .body__index{
+            width: 100%;
+        }
+        
     }

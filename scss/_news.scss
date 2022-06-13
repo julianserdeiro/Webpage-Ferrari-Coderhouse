@@ -1,0 +1,30 @@
+.body__news{
+    background: linear-gradient(to bottom, black 50%, #D32F2F);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    h2{
+        margin: 50px;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 5rem;
+        margin-top: 100px;
+    }
+}
+
+.body__form{
+    width: 50%;
+    margin-bottom: 150px;
+}
+
+
+@media(max-width:768px){
+    .body__news{
+        h2{
+        font-size: 2.5rem;
+        }
+    }
+}

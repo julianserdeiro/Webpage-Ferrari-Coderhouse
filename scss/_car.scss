@@ -1,0 +1,64 @@
+.body__car{
+    background: linear-gradient(to bottom, black 50%, #D32F2F);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header"
+    "titleCar"
+    "sectionCar"
+    "footer";
+    .titles-car{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        h2{
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        text-align: center;
+        font-size: 5rem;
+        grid-area: titleCar;
+        }
+    }
+    .section__car{
+        grid-area: sectionCar;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .card{
+            background: none;
+            margin-bottom: 50px;
+            width: 800px;
+            color: #ffffff;
+            border: none;
+            text-align: center;
+        }
+    }
+    
+}
+
+@media(max-width: 768px){
+    .body__car{
+        height: 100%;
+        h2{
+            font-size: 2.5rem;
+        }
+        .section__car{
+            display: flex;
+            flex-flow: column wrap;
+            .card{
+                width: 100%;
+                p{
+                    text-align: center;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+    
+        }
+        .video__car iframe{
+            display: none;
+        }
+    }
+}

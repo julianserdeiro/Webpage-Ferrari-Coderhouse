@@ -29,6 +29,10 @@
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
   grid-template-areas: "header" "section1" "section2" "footer"; }
+  .body__index .footer {
+    background: url(../images/background-index2.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover; }
 
 .ferrari__main {
   background: url(../images/background-index.jpg) no-repeat center;
@@ -74,10 +78,223 @@
   .ferrari__description #text3-description {
     grid-area: txt3; }
 
-.footer__index {
-  background: url(../images/background-index2.jpg) no-repeat center;
+@media (max-width: 1020px) {
+  .ferrari__description {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto; } }
+
+@media (max-width: 635px) {
+  .body__index {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "section1" "section2" "footer"; }
+  .ferrari__description {
+    width: 100%; } }
+
+@media (max-width: 350px) {
+  .body__index {
+    width: 100%; } }
+
+.body__drivers {
+  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "title" "section" "footer"; }
+  .body__drivers h2 {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 100px;
+    color: #ffffff; }
+  .body__drivers .card {
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: none; }
+    .body__drivers .card img {
+      width: 75%; }
+  .body__drivers .section__drivers {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "leclercCard ." ". sainzCard";
+    grid-area: section;
+    width: 100%; }
+    .body__drivers .section__drivers .section__leclerc {
+      grid-area: leclercCard;
+      color: #ffffff; }
+    .body__drivers .section__drivers .section__sainz {
+      grid-area: sainzCard;
+      color: #000000; }
+
+@media (max-width: 768px) {
+  .section__drivers {
+    display: flex !important;
+    flex-flow: column wrap;
+    align-content: center; }
+    .section__drivers h2 {
+      font-size: 2.5rem; }
+    .section__drivers .card {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      margin-bottom: 20px; }
+      .section__drivers .card p {
+        text-align: center; } }
+
+.body__season {
+  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "races" "footer"; }
+  .body__season h2 {
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 100px;
+    grid-area: titleRaces; }
+  .body__season .races .title-season {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px; }
+  .body__season .races .racesCalendar {
+    grid-area: races;
+    text-align: center;
+    margin-bottom: 150px; }
+
+@media (max-width: 768px) {
+  .races {
+    display: flex;
+    flex-flow: column nowrap; }
+    .races h2 {
+      font-size: 2.5rem; }
+  .racesCalendar {
+    display: flex;
+    flex-flow: column nowrap; }
+    .racesCalendar img {
+      width: 100%; } }
+
+.body__car {
+  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "titleCar" "sectionCar" "footer"; }
+  .body__car .titles-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff; }
+    .body__car .titles-car h2 {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 5px;
+      text-align: center;
+      font-size: 5rem;
+      grid-area: titleCar; }
+  .body__car .section__car {
+    grid-area: sectionCar;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .body__car .section__car .card {
+      background: none;
+      margin-bottom: 50px;
+      width: 800px;
+      color: #ffffff;
+      border: none;
+      text-align: center; }
+
+@media (max-width: 768px) {
+  .body__car {
+    height: 100%; }
+    .body__car h2 {
+      font-size: 2.5rem; }
+    .body__car .section__car {
+      display: flex;
+      flex-flow: column wrap; }
+      .body__car .section__car .card {
+        width: 100%; }
+        .body__car .section__car .card p {
+          text-align: center; }
+        .body__car .section__car .card img {
+          width: 100%; }
+    .body__car .video__car iframe {
+      display: none; } }
+
+.body__legends {
+  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "titleLegends" "sectionLegends" "footer"; }
+  .body__legends h2 {
+    margin: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5rem;
+    color: #ffffff; }
+  .body__legends .section__legends {
+    grid-area: sectionLegends;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .body__legends .section__legends .card {
+      width: 50vw;
+      margin-top: 30px;
+      background: none;
+      border: none;
+      color: #ffffff;
+      align-items: center; }
+      .body__legends .section__legends .card h5 {
+        text-align: center; }
+      .body__legends .section__legends .card img {
+        width: 50%; }
+
+@media (max-width: 768px) {
+  .body__legends h2 {
+    font-size: 2.5rem; }
+  .section__legends {
+    display: flex;
+    flex-flow: column nowrap; }
+    .section__legends .card {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center; } }
+
+.body__news {
+  background: linear-gradient(to bottom, black 50%, #D32F2F);
   background-attachment: fixed;
-  background-size: cover; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff; }
+  .body__news h2 {
+    margin: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 100px; }
+
+.body__form {
+  width: 50%;
+  margin-bottom: 150px; }
+
+@media (max-width: 768px) {
+  .body__news h2 {
+    font-size: 2.5rem; } }
 
 .footer {
   text-decoration: none;
