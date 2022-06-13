@@ -24,6 +24,61 @@
     width: 20px;
     filter: invert(100%); }
 
+.body__index {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "header" "section1" "section2" "footer"; }
+
+.ferrari__main {
+  background: url(../images/background-index.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  grid-area: section1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .ferrari__main h1 {
+    color: #ffffff;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 100px;
+    background-color: rgba(114, 0, 0, 0.5); }
+
+.ferrari__description {
+  background: url(../images/background-index2.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  grid-area: section2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "txt1 ." ". txt2" "txt3 ."; }
+  .ferrari__description .card {
+    text-align: center;
+    background: transparent;
+    border: none; }
+  .ferrari__description .card-body {
+    background-color: transparent;
+    margin: 80px 50px;
+    text-align: center;
+    color: #ffffff; }
+  .ferrari__description #text1-description {
+    grid-area: txt1; }
+  .ferrari__description #text2-description {
+    grid-area: txt2; }
+  .ferrari__description #text3-description {
+    grid-area: txt3; }
+
+.footer__index {
+  background: url(../images/background-index2.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover; }
+
 .footer {
   text-decoration: none;
   grid-area: footer; }
