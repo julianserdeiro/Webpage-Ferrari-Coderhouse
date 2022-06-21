@@ -1,0 +1,27 @@
+// Extends
+
+.titleh1{
+        color: #ffffff;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 5px;
+        text-align: center;
+        font-size: 100px;
+        background-color: rgba(114, 0, 0, 0.5); 
+}
+
+.titleh2{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 5rem;
+    color: #ffffff;
+    margin-top: 100px;
+}
+
+// Mixins
+
+@mixin flexbox($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}

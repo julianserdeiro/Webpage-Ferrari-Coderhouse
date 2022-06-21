@@ -8,23 +8,18 @@
     "sectionCar"
     "footer";
     .titles-car{
-        display: flex;
+        @include flexbox(center);
         flex-direction: column;
-        align-items: center;
         color: #ffffff;
         h2{
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        text-align: center;
-        font-size: 5rem;
-        grid-area: titleCar;
+            @extend .titleh2;
+            grid-area: titleCar;
         }
     }
     .section__car{
         grid-area: sectionCar;
-        display: flex;
+        @include flexbox(center);
         flex-direction: column;
-        align-items: center;
         .card{
             background: none;
             margin-bottom: 50px;

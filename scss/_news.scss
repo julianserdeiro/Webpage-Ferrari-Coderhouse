@@ -1,17 +1,12 @@
 .body__news{
     background: linear-gradient(to bottom, black 50%, #D32F2F);
     background-attachment: fixed;
-    display: flex;
+    @include flexbox(center);
     flex-direction: column;
-    align-items: center;
     color: #ffffff;
     h2{
         margin: 50px;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 3px;
-        text-align: center;
-        font-size: 5rem;
-        margin-top: 100px;
+        @extend .titleh2;
     }
 }
 

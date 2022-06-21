@@ -7,18 +7,12 @@
     "races"
     "footer"; 
     h2{
-        color: #ffffff;
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        text-align: center;
-        font-size: 5rem;
-        margin-top: 100px;
+        @extend .titleh2;
         grid-area: titleRaces;
     }
     .races{
         .title-season{
-            display: flex;
-            justify-content: center;
+            @include flexbox(center);
             margin-bottom: 150px;
         }
         .racesCalendar{

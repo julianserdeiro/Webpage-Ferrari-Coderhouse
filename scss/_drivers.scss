@@ -4,20 +4,16 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header"
-    "title"
+    "titleDrivers"
     "section"
     "footer";
     h2{
-        font-family: 'Bebas Neue', cursive;
-        letter-spacing: 5px;
-        text-align: center;
-        font-size: 5rem;
-        margin-top: 100px;
-        color: #ffffff;
+        @extend .titleh2;
+        grid-area: titleDrivers;
     }
     .card{
+            @include flexbox(center);
             margin-top: 100px;
-            align-items: center;
             text-align: center;
             border: none;
             background: none;
