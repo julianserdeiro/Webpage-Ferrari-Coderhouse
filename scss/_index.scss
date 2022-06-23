@@ -39,14 +39,16 @@
     "txt3 .";
     .card{
         text-align: center;
-        background: transparent;
+        background-color: #00000080;
         border: none;
+        border-radius: 2%;
     }
     .card-body{
         background-color: transparent;
-        margin: 80px 50px;
+        margin: 5rem 3rem;
         text-align: center;
         color: #ffffff;
+        
         }
         #text1-description{
             grid-area: txt1;
@@ -60,26 +62,29 @@
     }
 
     @media (max-width: 1020px){
-        .ferrari__description{
+    .ferrari__main{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .footer{
+        width: 100%;
+    }
+    .ferrari__description{
             display: flex;
             flex-flow: column nowrap;
             width: 100%;
             height: auto;
-        }
-    
     }
     @media (max-width: 635px){
         .body__index{
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto;
-            grid-template-areas: "header"
-            "section1"
-            "section2"
-            "footer";
-        }
-    
-        .ferrari__description{
-            width: 100%;
+            .ferrari__description{
+                .card{
+                    width: auto;
+                }
+            }
         }
     }
     
@@ -89,3 +94,4 @@
         }
         
     }
+}

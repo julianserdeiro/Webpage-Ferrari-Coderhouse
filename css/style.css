@@ -73,11 +73,12 @@
   grid-template-areas: "txt1 ." ". txt2" "txt3 ."; }
   .ferrari__description .card {
     text-align: center;
-    background: transparent;
-    border: none; }
+    background-color: #00000080;
+    border: none;
+    border-radius: 2%; }
   .ferrari__description .card-body {
     background-color: transparent;
-    margin: 80px 50px;
+    margin: 5rem 3rem;
     text-align: center;
     color: #ffffff; }
   .ferrari__description #text1-description {
@@ -88,26 +89,31 @@
     grid-area: txt3; }
 
 @media (max-width: 1020px) {
+  .ferrari__main {
+    display: flex;
+    flex-direction: column; }
+    .ferrari__main h1 {
+      font-size: 2.5rem; }
+  .footer {
+    width: 100%; }
   .ferrari__description {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     height: auto; } }
 
-@media (max-width: 635px) {
-  .body__index {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header" "section1" "section2" "footer"; }
-  .ferrari__description {
-    width: 100%; } }
+@media (max-width: 1020px) and (max-width: 635px) {
+  .body__index .ferrari__description .card {
+    width: auto; } }
 
-@media (max-width: 350px) {
+@media (max-width: 1020px) and (max-width: 350px) {
   .body__index {
     width: 100%; } }
 
 .body__drivers {
-  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  background: url(../images/drivers-background.jpg);
+  background-position: center;
+  background-size: cover;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
@@ -118,25 +124,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
-    border: none;
-    background: none; }
+    background-color: #000000b2; }
     .body__drivers .card img {
-      width: 75%; }
+      width: 50%; }
   .body__drivers .section__drivers {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-template-areas: "leclercCard ." ". sainzCard";
     grid-area: section;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 100px; }
     .body__drivers .section__drivers .section__leclerc {
       grid-area: leclercCard;
       color: #ffffff; }
     .body__drivers .section__drivers .section__sainz {
       grid-area: sainzCard;
-      color: #000000; }
+      color: #ffffff; }
 
 @media (max-width: 768px) {
   .section__drivers {
@@ -154,7 +160,9 @@
         text-align: center; } }
 
 .body__season {
-  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  background: url(../images/WorldMapBackground.svg) center;
+  background-size: cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
@@ -184,12 +192,13 @@
       width: 100%; } }
 
 .body__car {
-  background: linear-gradient(to bottom, black 50%, #D32F2F);
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "header" "titleCar" "sectionCar" "footer"; }
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header" "titleCar" "sectionCar" "section2Car" "footer"; }
   .body__car .titles-car {
+    margin-top: 10%;
+    margin-bottom: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,39 +206,52 @@
     color: #ffffff; }
     .body__car .titles-car h2 {
       grid-area: titleCar; }
+    .body__car .titles-car h4 {
+      margin-top: 75px; }
   .body__car .section__car {
+    background: url(../images/background-car.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     grid-area: sectionCar;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-    .body__car .section__car .card {
-      background: none;
-      margin-bottom: 50px;
-      width: 800px;
+  .body__car .section2__car {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/f1-75-car-2.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-attachment: fixed; }
+    .body__car .section2__car h4 {
+      margin-top: 75px;
       color: #ffffff;
-      border: none;
       text-align: center; }
+  .body__car .footer {
+    background: url(../images/f1-75-car-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; }
 
 @media (max-width: 768px) {
   .body__car {
-    height: 100%; }
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "titleCar" "sectionCar" "section2Car" "footer"; }
     .body__car h2 {
       font-size: 2.5rem; }
-    .body__car .section__car {
-      display: flex;
-      flex-flow: column wrap; }
-      .body__car .section__car .card {
-        width: 100%; }
-        .body__car .section__car .card p {
-          text-align: center; }
-        .body__car .section__car .card img {
-          width: 100%; }
-    .body__car .video__car iframe {
-      display: none; } }
+    .body__car .section2__car {
+      background-position: 28%; } }
 
 .body__legends {
-  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  background: url(../images/legends-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto;
@@ -242,18 +264,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 50px; }
     .body__legends .section__legends .card {
       width: 50vw;
       margin-top: 30px;
-      background: none;
+      background-color: #00000080;
       border: none;
       color: #ffffff;
-      align-items: center; }
+      align-items: center;
+      text-align: center;
+      font-size: large; }
       .body__legends .section__legends .card h5 {
         text-align: center; }
       .body__legends .section__legends .card img {
         width: 50%; }
+  .body__legends .footer {
+    filter: invert(20%); }
 
 @media (max-width: 768px) {
   .body__legends h2 {
@@ -269,7 +296,9 @@
       text-align: center; } }
 
 .body__news {
-  background: linear-gradient(to bottom, black 50%, #D32F2F);
+  background: url(../images/background-news.jpg);
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -281,7 +310,7 @@
 
 .body__form {
   width: 50%;
-  margin-bottom: 150px; }
+  margin-bottom: 250px; }
 
 @media (max-width: 768px) {
   .body__news h2 {

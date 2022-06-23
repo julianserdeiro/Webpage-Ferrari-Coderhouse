@@ -1,5 +1,7 @@
 .body__season{
-    background: linear-gradient(to bottom, black 50%, #D32F2F);
+    background: url(../images/WorldMapBackground.svg)center;
+    background-size: cover;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;

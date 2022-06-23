@@ -1,5 +1,7 @@
 .body__news{
-    background: linear-gradient(to bottom, black 50%, #D32F2F);
+    background: url(../images/background-news.jpg);
+    background-position: center center;
+    background-size: cover;
     background-attachment: fixed;
     @include flexbox(center);
     flex-direction: column;
@@ -12,7 +14,7 @@
 
 .body__form{
     width: 50%;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 
 

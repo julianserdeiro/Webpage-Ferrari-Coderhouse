@@ -1,13 +1,16 @@
 .body__car{
-    background: linear-gradient(to bottom, black 50%, #D32F2F);
+    
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: "header"
     "titleCar"
     "sectionCar"
+    "section2Car"
     "footer";
     .titles-car{
+        margin-top: 10%;
+        margin-bottom: 25%;
         @include flexbox(center);
         flex-direction: column;
         color: #ffffff;
@@ -15,19 +18,37 @@
             @extend .titleh2;
             grid-area: titleCar;
         }
+        h4{
+            margin-top: 75px;
+        }
     }
     .section__car{
+        background: url(../images/background-car.jpg);
+        background-position: center;
+        background-size: cover;
+     background-attachment: fixed;
         grid-area: sectionCar;
         @include flexbox(center);
         flex-direction: column;
-        .card{
-            background: none;
-            margin-bottom: 50px;
-            width: 800px;
+    }
+    .section2__car{
+        height: 100vh;
+        width: 100%;
+        background: url(../images/f1-75-car-2.jpg);
+        background-position: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        h4{
+            margin-top: 75px;
             color: #ffffff;
-            border: none;
             text-align: center;
         }
+    }
+    .footer{
+        background: url(../images/f1-75-car-2.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
     }
     
 }
@@ -35,25 +56,19 @@
 @media(max-width: 768px){
     .body__car{
         height: 100%;
+        display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas: "header"
+            "titleCar"
+        "sectionCar"
+        "section2Car"
+        "footer";
         h2{
             font-size: 2.5rem;
         }
-        .section__car{
-            display: flex;
-            flex-flow: column wrap;
-            .card{
-                width: 100%;
-                p{
-                    text-align: center;
-                }
-                img{
-                    width: 100%;
-                }
-            }
-    
-        }
-        .video__car iframe{
-            display: none;
+        .section2__car{
+            background-position: 28%;
         }
     }
 }
