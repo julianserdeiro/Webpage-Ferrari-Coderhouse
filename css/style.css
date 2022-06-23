@@ -75,7 +75,9 @@
     text-align: center;
     background-color: #00000080;
     border: none;
-    border-radius: 2%; }
+    border-radius: 2%;
+    margin-top: 25px;
+    margin-bottom: 25px; }
   .ferrari__description .card-body {
     background-color: transparent;
     margin: 5rem 3rem;
