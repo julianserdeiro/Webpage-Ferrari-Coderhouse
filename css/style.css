@@ -6,7 +6,7 @@
   font-size: 100px;
   background-color: rgba(114, 0, 0, 0.5); }
 
-.titleh2, .body__drivers h2, .body__season h2, .body__car .titles-car h2, .body__legends h2, .body__news h2 {
+.titleh2, .body__drivers h2, .body__season h2, .body__car .titles-car h2, .body__legends h2, .body__news h2, .body__404 h2 {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 5px;
   text-align: center;
@@ -432,3 +432,19 @@
   100% {
     top: 90%;
     opacity: 0; } }
+
+.body__404 {
+  background: url(../images/error-404.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "title404" "footer"; }
+  .body__404 h2 {
+    margin: 50px;
+    margin-top: 200px;
+    margin-bottom: 400px; }
