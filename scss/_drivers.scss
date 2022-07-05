@@ -40,14 +40,15 @@
     .section__sainz{
         grid-area: sainzCard;
         color: $white;
-    }
+        }
     }
 }
 
 
 @media (max-width: 768px){
+    .body__drivers{
     .section__drivers{
-        display: flex !important;
+        display: flex;
         flex-flow: column wrap;
         align-content: center;
         h2{
@@ -60,6 +61,7 @@
             margin-bottom: 20px;
             p{
                 text-align: center;
+                }
             }
         }
     }

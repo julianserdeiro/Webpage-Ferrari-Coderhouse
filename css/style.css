@@ -150,18 +150,18 @@
       color: #ffffff; }
 
 @media (max-width: 768px) {
-  .section__drivers {
-    display: flex !important;
+  .body__drivers .section__drivers {
+    display: flex;
     flex-flow: column wrap;
     align-content: center; }
-    .section__drivers h2 {
+    .body__drivers .section__drivers h2 {
       font-size: 2.5rem; }
-    .section__drivers .card {
+    .body__drivers .section__drivers .card {
       display: flex;
       flex-flow: column wrap;
       align-items: center;
       margin-bottom: 20px; }
-      .section__drivers .card p {
+      .body__drivers .section__drivers .card p {
         text-align: center; } }
 
 .body__season {
@@ -248,7 +248,7 @@
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "titleCar" "sectionCar" "section2Car" "footer"; }
-    .body__car h2 {
+    .body__car .titles-car h2 {
       font-size: 2.5rem; }
     .body__car .section2__car {
       background-position: 28%; } }

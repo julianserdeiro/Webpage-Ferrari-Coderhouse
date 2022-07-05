@@ -15,8 +15,8 @@
         flex-direction: column;
         color: $white;
         h2{
-            @extend .titleh2;
-            grid-area: titleCar;
+        @extend .titleh2;
+        grid-area: titleCar;
         }
         h4{
             margin-top: 75px;
@@ -62,12 +62,12 @@
             grid-template-rows: auto auto auto auto;
             grid-template-areas: "header"
             "titleCar"
-        "sectionCar"
-        "section2Car"
-        "footer";
-        h2{
-            font-size: 2.5rem;
-        }
+            "sectionCar"
+            "section2Car"
+            "footer";
+            .titles-car h2{
+                font-size: 2.5rem;
+            }
         .section2__car{
             background-position: 28%;
         }
