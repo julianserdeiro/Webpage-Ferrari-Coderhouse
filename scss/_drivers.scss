@@ -12,6 +12,7 @@
     h2{
         @extend .titleh2;
         grid-area: titleDrivers;
+        margin-top: 40vh;
     }
     .card{
             @include flexbox(center);
@@ -32,12 +33,13 @@
             width: 100%;
             margin-bottom: 100px;
     .section__leclerc{
+        margin-top: 250px;
         grid-area: leclercCard;
-        color: #ffffff;
+        color: $white;
     }
     .section__sainz{
         grid-area: sainzCard;
-        color: #ffffff;
+        color: $white;
     }
     }
 }

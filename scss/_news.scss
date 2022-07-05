@@ -5,7 +5,7 @@
     background-attachment: fixed;
     @include flexbox(center);
     flex-direction: column;
-    color: #ffffff;
+    color: $white;
     h2{
         margin: 50px;
         @extend .titleh2;

@@ -13,7 +13,7 @@
         margin-bottom: 25%;
         @include flexbox(center);
         flex-direction: column;
-        color: #ffffff;
+        color: $white;
         h2{
             @extend .titleh2;
             grid-area: titleCar;
@@ -26,8 +26,9 @@
         background: url(../images/background-car.jpg);
         background-position: center;
         background-size: cover;
-     background-attachment: fixed;
+        background-attachment: fixed;
         grid-area: sectionCar;
+        text-align: center;
         @include flexbox(center);
         flex-direction: column;
     }
@@ -40,7 +41,7 @@
         background-attachment: fixed;
         h4{
             margin-top: 75px;
-            color: #ffffff;
+            color: $white;
             text-align: center;
         }
     }

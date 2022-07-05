@@ -8,7 +8,7 @@
     .navBar{
         width: 100%;
         display: flex;
-        color: #ffffff;
+        color: $white;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
@@ -16,10 +16,10 @@
         margin-right: 30px;
     }
     .nav-link{
-        color: #ffffff;
+        color: $white;
         font-size: x-large;
         &:hover{
-            color: #ffffff;
+            color: $white;
         }
         
     }

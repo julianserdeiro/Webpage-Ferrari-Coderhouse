@@ -7,7 +7,9 @@
         list-style: none;
         img{
             width: 50%;
+            &:hover{
+                width: 60%;
+            }
         }
     }
-    
 }

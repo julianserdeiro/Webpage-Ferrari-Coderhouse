@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title>Ferrari F1 | The Drivers</title>
 </head>
@@ -49,37 +50,38 @@
         <div class="title-drivers drivers">
             <h2 class="focus-in-expand-fwd" id="title-heroes">The heroes</h2>
         </div>
+        <div class="scroll-down"></div>
         <div class="section__drivers">
             <div class="section__leclerc">
-                <div class="card card__drivers">
+                <div class="card card__drivers" data-aos="fade-down">
                     <img src="../images/charles-leclerc-ferrari.png" class="card-img-top" alt="charles-leclerc-ferrari">
                     <div class="card-body">
                         <h5 class="card-title">Charles Leclerc</h5>
-                        <p class="card-text">2015- 4° in Formula 3 with VAR</p>
-                        <p class="card-text">2016- Champion in GP3 with ART</p>
-                        <p class="card-text">2017- Champion in Formula 2 with PREMA</p>
-                        <p class="card-text">2018- 13° in F1 with Sauber</p>
-                        <p class="card-text">2019- 4° in F1 with Ferrari</p>
-                        <p class="card-text">2020- 8° in F1 with Ferrari</p>
-                        <p class="card-text">2021- 7° in F1 with Ferrari</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="100">2015- 4° in Formula 3 with VAR</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="200">2016- Champion in GP3 with ART</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="300">2017- Champion in Formula 2 with PREMA</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="400">2018- 13° in F1 with Sauber</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="500">2019- 4° in F1 with Ferrari</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="600">2020- 8° in F1 with Ferrari</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="700">2021- 7° in F1 with Ferrari</p>
                     </div>
                 </div>
             </div>
             <div class="section__sainz">
-                <div class="card card__drivers">
+                <div class="card card__drivers" data-aos="fade-down">
                     <img src="../images/carlos-sainz-ferrari.png" class="card-img-top" alt="carlos-sainz-jr-ferrari">
                     <div class="card-body">
                         <h5 class="card-title">Carlos Sainz</h5>
                         <p class="card-text"></p>
-                        <p class="card-text">2013- 10° in Gp3 with MWA</p>
-                        <p class="card-text">2014- Champion in Formula Renault with DAMS</p>
-                        <p class="card-text">2015- 15° in F1 with Toro Rosso</p>
-                        <p class="card-text">2016- 12° in F1 with Toro Rosso</p>
-                        <p class="card-text">2017- 9° in F1 with Toro Rosso and Renault</p>
-                        <p class="card-text">2018- 10° in F1 with Renault</p>
-                        <p class="card-text">2019- 6° in F1 with Mclaren</p>
-                        <p class="card-text">2020- 6° in F1 with Mclaren</p>
-                        <p class="card-text">2021- 5° in F1 with Ferrari</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="100">2013- 10° in Gp3 with MWA</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="200">2014- Champion in Formula Renault with DAMS</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="300">2015- 15° in F1 with Toro Rosso</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="400">2016- 12° in F1 with Toro Rosso</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="500">2017- 9° in F1 with Toro Rosso and Renault</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="600">2018- 10° in F1 with Renault</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="700">2019- 6° in F1 with Mclaren</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="800">2020- 6° in F1 with Mclaren</p>
+                        <p class="card-text" data-aos="fade-right" data-aos-delay="900">2021- 5° in F1 with Ferrari</p>
                     </div>
                 </div>
             </div>
@@ -94,5 +96,10 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
