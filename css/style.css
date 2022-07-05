@@ -37,8 +37,7 @@
   .header .navbar-toggler-icon {
     filter: invert(100%); }
   .header #ferrari-logo {
-    width: 20px;
-    filter: invert(100%); }
+    width: 20px; }
 
 .body__index {
   display: grid;
@@ -282,7 +281,7 @@
       .body__legends .section__legends .card img {
         width: 50%; }
   .body__legends .footer {
-    filter: invert(20%); }
+    filter: invert(100%); }
 
 @media (max-width: 768px) {
   .body__legends h2 {
