@@ -448,3 +448,5 @@
     margin: 50px;
     margin-top: 200px;
     margin-bottom: 400px; }
+  .body__404 #title404 {
+    grid-area: title404; }
