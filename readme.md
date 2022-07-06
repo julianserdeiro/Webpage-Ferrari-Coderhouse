@@ -35,3 +35,11 @@ Este proyecto fue realizado en el trayecto del curso de Programación Web de la 
  En principio todo el maquetado fue en HTML, y los estilos se los dí con CSS. Pero a medida que fui avanzando en el aprendizaje, la organización del contenido pasó a manos de Flexbox, Grids y Bootstrap y los estilos a SASS.
  
  A pesar de que tenía conocimiento previo en Html y Css poder realizar este trayecto educativo y finalizarlo con este proyecto me hizo aprender mucho y disfrutar del diseño y desarrollo web.
+
+ #### PS 🎁 ❌
+ Hay creada una página de error 404 que todavía no fue linkeada al proyecto al fallar, pero eso será la próxima
+
+ ### Error 404
+ ![Error 404 page](wireframes/Error404.jpg "Error 404 page")
+
+ 👋👋👋
